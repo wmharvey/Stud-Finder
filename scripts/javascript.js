@@ -15,8 +15,19 @@ $(function(){
       });
     })
   }
-
   playButton();
+
+
+  function galleryTemplate() {
+    $.get("templates/gallery-template.html", function(data){
+      console.log(data);
+      var compileTemplate = Handlebars.compile(data);
+      var html = compileTemplate;
+      $(".template").append(html); //currently appending to .template class in html
+    })
+  }
+  galleryTemplate();
+
 })
 //change .gallery to display: none;
 //button back to gallery inside .video div
