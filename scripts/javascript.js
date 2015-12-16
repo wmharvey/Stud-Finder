@@ -19,7 +19,7 @@ $(function(){
 
 
   function galleryTemplate() {
-    $.get("templates/gallery.html", function(data){
+    $.get("templates/gallery-template.html", function(data){
       console.log(data);
       var compileTemplate = Handlebars.compile(data);
       var html = compileTemplate;
