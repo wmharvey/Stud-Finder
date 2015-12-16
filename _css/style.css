@@ -1,0 +1,33 @@
+  /*===== Play button =====*/
+  #play-container {
+    float:left;
+    position:relative;
+  }
+
+  #play-container:hover .play {
+    display: block;
+  }
+
+.play {
+  position: absolute;
+  display: none;
+  top: 28%;
+  width: 80%;
+  margin: 0 auto;
+  left: 0px;
+  right: 0px;
+  z-index: 100
+}
+/*===== /Play button =====*/
+
+/*===== Video =====*/
+.hide {
+  display: none;
+}
+
+
+
+
+/*===== /Video =====*/
+
+

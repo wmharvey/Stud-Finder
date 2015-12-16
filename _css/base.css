@@ -1,0 +1,379 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+/* ---- Normalize ---- */
+@import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
+
+/* ---- Utils ---- */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icn--nav-toggle:before {
+  display: block;
+  content: '';
+  position: absolute; }
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.centered, .grid {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color: #797e83;
+	margin: 0;
+	/*background: url('../_img/bg-11.jpg') repeat;*/
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+h4 {
+  /*margin-top: 1.375em;*/
+  /*margin-bottom: 2.57143em;*/
+  color: #d6d7d9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #797e83;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #0b0b0b;
+  	border-color: #525559;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+#header-horses {
+	/*background-color: rgba(30,30,30, .75);*/
+	background-image: url("../_img/1600x500_riding.jpg");
+	background-size: cover;
+    width: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+    /*min-height: 300px;*/
+}
+#header-holder {
+    background-color: rgba(0,0,0,0.55);
+    height: 250px;
+}
+.main-logo {
+	/*border: 1px solid pink;*/
+	width: 270px;
+	height: 170px;
+	margin: 45px auto 0;
+}
+
+.site-logo {
+  background-image: url("../_img/logo_white.png");
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 170px;
+  display: inline-block;
+  background-size: 100%;
+}
+
+.gallery{
+	/*border: 1px solid pink;*/
+	margin-top: 20px;
+}
+
+.gallery h4{
+	margin-top: .8em;
+}
+
+.icn--nav-toggle {
+  width: 25px;
+  height: 17px;
+  border-top: solid 3px #797e83;
+  border-bottom: solid 3px #797e83;
+  position: relative;
+}
+
+.icn--nav-toggle:before {
+    width: 25px;
+    height: 3px;
+    background: #999da1;
+    top: 4px;
+}
+
+.icn--close {
+  background-image: url("../_img/icn-close.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 4%;
+  top: 4%;
+}
+
+
+/* ---- Page Elements ---- */
+
+.icn--nav-toggle, .icn--close {
+  line-height: 0;
+  cursor: pointer;
+}
+
+.img--wrap {
+  border: 1px solid #d6d7d9;
+  padding: 0.75em;
+}
+
+.img--avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+	border: 6px solid #eee;
+}
+
+/* =================================
+  Gallery Grid Sytem and Container
+==================================== */
+
+/* ---- Grid ---- */
+
+.grid {
+  width: 90%;
+
+}
+
+.horse-details {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 30px;
+}
+
+[class*="grid__col--"] > .grid {
+	width: 100%;
+}
+
+.container {
+  max-width: 1100px; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  /*border: 1px solid pink;*/ }
+
+.container:before, .container:after {
+  content: " ";
+  display: table; }
+
+.container:after {
+  clear: both; }
+
+
+/* =========================================
+  Media Queries - As browser size increases
+============================================ */
+
+@media (min-width: 769px) {
+
+	/* Base
+	================================ */
+
+	h4 {
+      margin-top: 2.625em;
+  	}
+
+	/* Header and Banner
+	================================ */
+
+	.main-header {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1050px;
+	}
+
+	#header-horses{
+		background-image: url("../_img/1600x500_horses.jpg");
+	    background-size: cover;
+	    width: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+	    min-height: 300px;
+	}
+
+	#header-holder {
+	    height: 300px;
+	}
+
+	.main-logo {
+		margin: 105px 0 0 30px;
+	}
+
+	/* Page Elements
+	================================ */
+
+	.img--avatar {
+      	margin-top: 1.5em;
+  	}
+
+    .img--hero {
+    	margin-bottom: 2.625em;
+	}
+
+	/* Grid
+	================================ */
+
+	.grid__col--1 {
+	    width: 6.5%;
+	}
+	.grid__col--2 {
+	    width: 15%;
+	}
+	.grid__col--3 {
+	    width: 23.5%;
+	}
+	.grid__col--4 {
+	    width: 32%;
+	}
+	.grid__col--5 {
+	    width: 40.5%;
+	}
+	.grid__col--6 {
+	    width: 49%;
+	}
+	.grid__col--7 {
+	    width: 57.5%;
+	}
+	.grid__col--8 {
+	    width: 66%;
+	}
+	.grid__col--9 {
+	    width: 74.5%;
+	}
+	.grid__col--10 {
+	    width: 83%;
+	}
+	.grid__col--11 {
+	    width: 91.5%;
+	}
+	.grid__col--12 {
+	  	width: 100%;
+	}
+
+	[class^="grid__col--"] {
+	   	float: left;
+	   	min-height: 1px;
+	    padding-left: 10px;
+	    padding-right: 10px; }
+	    [class^="grid__col--"] + [class^="grid__col--"] {
+	      margin-left: 2%; }
+	    [class^="grid__col--"]:last-of-type {
+	      float: right;
+	 }
+
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+	[class^="grid__col--"] {
+	   	margin-top: 0.75em;
+		margin-bottom: 0.75em;
+	}
+}
+
+ @media (min-width: 1050px) {
+    .grid {
+      max-width: 1050px;
+  	}
+ }
+
+ /* ---- States and Debug ---- */
+
+.is-hidden {
+  display: none; }
+
+.theme__poly .grid [class*="grid__col"] {
+  font-weight: 100;
+  margin-bottom: 1em;
+  padding: 1.75%;
+}
+
+.theme__poly .grid__col--12 {
+  background-color: #DEF4E5; }
+
+.theme__poly .grid__col--8 {
+  background-color: #DCE0F2; }
+
+.theme__poly .grid__col--7 {
+  background-color: #DCF0EF; }
+
+.theme__poly .grid__col--6 {
+  background-color: #FFE3DB; }
+
+.theme__poly .grid__col--4 {
+  background-color: #F8EDD0; }
+
+.theme__poly .grid__col--5 {
+  background-color: #EAEBEC; }
+
+.theme__poly .grid__col--2 {
+  background-color: #C5E2CE; }
+
+.theme__poly .grid__col--3 {
+  background-color: #D6EEF5; }

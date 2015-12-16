@@ -1,0 +1,258 @@
+[
+  {
+    "id": 20007836,
+    "name": "C-W&rsquo;s Pride Over Easy (Poe)",
+    "showcase": true,
+    "nickname": "poe",
+    "stud-fee": 500,
+    "LFG": true,
+    "description": "<p>Foaled on May 25, 2000, Poe is a wonderful stallion. His personality and nature is like none other. He is smart, willing, and athletic. Most folks who come to the barn don&rsquo;t realize that he is a stallion because he is so gentle. Poe has a strong, compact, baroque body style, adding to his appeal and athleticism. Poe has a natural gait and good hard feet which allows him to remain barefoot year &rsquo;round. He gives his offspring his easy-going nature and trainability. His babies have also all been very personable and like to be with people.<p>",
+    "sire": {
+      "id": 802065,
+      "name": "Exclusive Pride"},
+    "dam": {
+      "id": 774901,
+      "name": "Sun&rsquo;s Piddley Dee"}
+  },
+  {
+    "id":  802065,
+    "name": "Exclusive Pride",
+    "sire": {
+      "id": 661459,
+      "name": "Pride of Midnight H.F."},
+    "dam": {
+      "id": 713928,
+      "name": "Delight&rsquo;s Lady K."}
+  },
+  {
+    "id":  774901,
+    "name": "Sun&rsquo; Piddley Dee",
+    "sire": {
+      "id": 620157,
+      "name": "Sun&rsquo;s Merry Man"},
+    "dam": {
+      "id": 677176,
+      "name": "Majorette&rsquo;s Gala"}
+  },
+    {
+    "id":  661459,
+    "name": "Pride of Midnight H.F.",
+    "sire": {
+      "id": 410751,
+      "name": "Midnight Sun"},
+    "dam": {
+      "id": 472897,
+      "name": "Pride of Stanley"}
+  },
+  {
+    "id":  713928,
+    "name": "Delight&rsquo;s Lady K.",
+    "sire": {
+      "id": 592756,
+      "name": "Sun&rsquo;s Delight D."},
+    "dam": {
+      "id": 631510,
+      "name": "Go Boy&rsquo;s Lady K."}
+  },
+  {
+    "id":  620157,
+    "name": "Sun&rsquo;s Merry Man",
+    "sire": {
+      "id": 561395,
+      "name": "Reyclif Mid-Merry"},
+    "dam": {
+      "id": 540232,
+      "name": "Lady&rsquo;s High Calico"}
+  },
+  {
+    "id":  677176,
+    "name": "Majorette&rsquo;s Gala",
+    "sire": {
+      "id": 590720,
+      "name": "Liberace&rsquo;s Playboy"},
+    "dam": {
+      "id": 623584,
+      "name": "Calico&rsquo;s Majorette"}
+  },
+  {
+    "id":  410751,
+    "name": "Midnight Sun",
+    "WGC": true,
+    "sire": {
+      "id": 350075,
+      "name": "Wilson&rsquo;s Allen"},
+    "dam": {
+      "id": 410682,
+      "name": "Ramsey&rsquo;s Rena"}
+  },
+  {
+    "id":  472897,
+    "name": "Pride of Stanley",
+    "sire": {
+      "id": 410944,
+      "name": "Merry Maker"},
+    "dam": {
+      "id": 443146,
+      "name": "Patsy Delbridge"}
+  },
+  {
+    "id":  592756,
+    "name": "Sun&rsquo;s Delight D.",
+    "WGC": true,
+    "sire": {
+      "id": 410751,
+      "name": "Midnight Sun"},
+    "dam": {
+      "id": 492405,
+      "name": "Wilson Snip&rsquo;s Chance"}
+  },
+  {
+    "id":  631510,
+    "name": "Go Boy&rsquo;s Lady K.",
+    "sire": {
+      "id": 431336,
+      "name": "Merry Go Boy"},
+    "dam": {
+      "id": 570471,
+      "name": "Merry Boy&rsquo;s Lady K."}
+  },
+  {
+    "id":  561395,
+    "name": "Reyclif Mid-Merry",
+    "sire": {
+      "id": 410751,
+      "name": "Midnight Sun"},
+    "dam": {
+      "id": 430979,
+      "name": "Baby Ray"}
+  },
+  {
+    "id":  540232,
+    "name": "Lady&rsquo;s High Calico",
+    "sire": {
+      "id": 461763,
+      "name": "Golden Sun Allen"},
+    "dam": {
+      "id": 473441,
+      "name": "Lady High Heels"}
+  },
+  {
+    "id": 590720,
+    "name": "Liberace&rsquo;s Playboy",
+    "sire": {
+      "id": 541209,
+      "name": "Eagle&rsquo;s Mr. Liberace"},
+    "dam": {
+      "id": 453170,
+      "name": "Bond Rally"}
+  },
+  {
+    "id": 623584,
+    "name": "Calico&rsquo;s Majorette",
+    "sire": {
+      "id": 462820,
+      "name": "Merry Boy&rsquo;s Major"},
+    "dam": {
+      "id": 540232,
+      "name": "Lady&rsquo;s High Calico"}
+  },
+  {
+    "id": 350075,
+    "name": "Wilson&rsquo;s Allen"
+  },
+  {
+    "id": 410682,
+    "name": "Ramsey&rsquo;s Rena"
+  },
+  {
+    "id": 410944,
+    "name": "Merry Maker"
+  },
+  {
+    "id": 443146,
+    "name": "Patsy Delbridge"
+  },
+  {
+    "id": 492405,
+    "name": "Wilson Snip's Chance"
+  },
+  {
+    "id": 431336,
+    "name": "Merry Go Boy",
+    "WGC": true
+  },
+  {
+    "id": 570471,
+    "name": "Merry Boy&rsquo;s Lady K."
+  },
+  {
+    "id": 430979,
+    "name": "Baby Ray"
+  },
+  {
+    "id": 461763,
+    "name": "Golden Sun Allen"
+  },
+  {
+    "id": 473441,
+    "name": "Lady High Heels"
+  },
+  {
+    "id": 541209,
+    "name": "Eagle&rsquo;s Mr. Liberace"
+  },
+  {
+    "id": 453170,
+    "name": "Bond Rally"
+  },
+  {
+    "id": 462820,
+    "name": "Merry Boy's Major"
+  },
+  {
+    "id": 955365,
+    "name": "Cat&rsquo;s Lucky Patches (Lucky)",
+    "showcase": true,
+    "nickname": "lucky",
+    "description": "<p>Born in May, 1995, Lucky was proudly added to the Course-Walker family in 2005. She has brought the older bloodlines to our breeding program and has turned out to be an excelent mother and riding horse as well. She is a striking example of a tobiano mare, and her smooth, head-shaking gait is a pleasure to ride. Lucky has a clasic Walking Horse head, and large body, with good bone in her legs. She has excelled as a trail horse and is pretty enough for the showring. She gives her babies not only the conformation of a good solid Walking Horse, but a levelheadedness that makes training so easy.<p>",
+    "sire": {
+      "id": 900002,
+      "name": "Catalyst"},
+    "dam": {
+      "id": 923878,
+      "name": "Painter&rsquo;s Little Patches"}
+  },
+  {
+    "id": 20215870,
+    "name": "Pusher&rsquo;s Miss Merry Rose (Rosie)",
+    "showcase": true,
+    "nickname": "rosie",
+    "description": "<p>Rosie came to Course-Walkers as a rescue horse.We were only going to foster care her until she could find a permanent home - it just turned out to be us! Well gaited and a terrific trail horse, we just enjoyed riding her, but have been overjoyed at having finally uncovered her breeding. We were able to register her and she is now one of our good brood mares in addition to being a great riding horse. She is short but sturdy, and has the same disposition in our horses that we love so much - she is personable, curious and calm, easily trained and has a great running walk. We fully expect these traits to be passed along to her foals.<p>",
+    "sire": {
+      "id": 935206,
+      "name": "Pusher&rsquo;s Firestone"},
+    "dam": {
+      "id": 954224,
+      "name": "Merry B&rsquo;s Deep Threat"}
+  },
+  {
+    "id": 9724119,
+    "name": "Meganizer (Pickle)",
+    "showcase": true,
+    "nickname": "pickle",
+    "description": "<p>Born in 1997, \"Pickle\" started out life as a race horse until she retired in 2002. She now does a little of everything from dressage and jumping, riding the trails, teach beginners as well as a little cow work now and then. She has the power that Thoroughbreds are so noted for, but it has been tempered by a lot of dillegent training. She has the versitility to jog with the best Quarter Horses as well as find that lofty trot that so enamours the dressage crowd. She is very soft to the bit and can be ridden bridless, and keeps her head when allowed to gallop on the beach coming back to a trot at just a deep breath.<p>"
+  },
+  {
+    "id": 20275239,
+    "name": "Crescent Bay Bob (Bay Bob)",
+    "showcase": true,
+    "nickname": "baybob",
+    "description": "<p>Bay Bob has been an absolute joy to have in the Course-Walkers string. He is a wonderful gelding who is at home on the trail as well as working over a jumping course. He works well with beginners as well as advanced students, gaiting naturally in a rope halter as well as working well in a bit. He has all the atributes that one looks for in a perfect horse - comes to you in the pasture, polite on the ground, clips, bathes, loads, ties and cross ties, stands for mounting, riding inside and out, alone or in a group.<p>",
+    "sire": {
+      "id": 802065,
+      "name": "Exclusive Pride"},
+    "dam": {
+      "id": 934653,
+      "name": "Gen MS Designer"}
+  }
+]
