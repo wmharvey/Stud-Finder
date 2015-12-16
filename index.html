@@ -113,18 +113,19 @@
 	</div>
 
 
-	<!-- Video -->
-	<div class="hide video">
-		<div class="grid">
-			<center>
-				<video width="560" height="315" controls>
-				  <source src="movie.mp4" type="video/mp4">
-				  <source src="movie.ogg" type="video/ogg">
-				</video>
-			</center>
-			<button class="return-button">Return to gallery</button>
-		</div>
-	</div>
+    <!-- Video -->
+    <div class="hide video">
+        <div class="grid">
+            <center>
+                <video width="560" height="315" controls>
+                  <!-- <source src="movie.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg"> -->
+                    <!-- Place holder video sources -->
+                </video>
+            </center>
+            <button class="return-button">Return to gallery</button>
+        </div>
+    </div>
 
 	<!-- <div class="theme__poly"> -->
 	<h4 id="poe" class="grid">C-W&rsquo;s Pride Over Easy (Poe) - 20007836 :: (Stud fee $500, LFG)</h4>
@@ -1197,30 +1198,33 @@
 	  </footer>
 	</div>
 
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="./scripts/javascript.js"></script>
-	<script>
-	  // $('#toggle').click(function() {
-	  //   $(this).next('.nav').toggleClass("is-collapsed-mobile");
-	  // });
-	  $('#toggle-1').click(function() {
-		$('.ancestry-1').toggleClass("is-hidden");
-	  });
-	  $('#toggle-2').click(function() {
-		$('.ancestry-2').toggleClass("is-hidden");
-	  });
-	  $('#toggle-3').click(function() {
-		$('.ancestry-3').toggleClass("is-hidden");
-	  });
-	  $('#toggle-4').click(function() {
-		$('.ancestry-4').toggleClass("is-hidden");
-	  });
-	  $('#toggle-5').click(function() {
-		$('.ancestry-5').toggleClass("is-hidden");
-	  });
-	  $('#toggle-6').click(function() {
-		$('.ancestry-6').toggleClass("is-hidden");
-	  });
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.4.min.js"><\/script')</script>
+    <script type="text/javascript" src="scripts/handlebars-v4.0.5.js"></script>
+    <script src="./scripts/javascript.js"></script>
+    <script>
+      // $('#toggle').click(function() {
+      //   $(this).next('.nav').toggleClass("is-collapsed-mobile");
+      // });
+      $('#toggle-1').click(function() {
+        $('.ancestry-1').toggleClass("is-hidden");
+      });
+      $('#toggle-2').click(function() {
+        $('.ancestry-2').toggleClass("is-hidden");
+      });
+      $('#toggle-3').click(function() {
+        $('.ancestry-3').toggleClass("is-hidden");
+      });
+      $('#toggle-4').click(function() {
+        $('.ancestry-4').toggleClass("is-hidden");
+      });
+      $('#toggle-5').click(function() {
+        $('.ancestry-5').toggleClass("is-hidden");
+      });
+      $('#toggle-6').click(function() {
+        $('.ancestry-6').toggleClass("is-hidden");
+      });
+    </script>
+
 </body>
 </html>
