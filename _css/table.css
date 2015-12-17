@@ -1,0 +1,26 @@
+.table {
+  display: flex;
+  border: 1px solid black;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 25%;
+  border-right: 1px solid black;
+  max-height: 1000px;
+  text-align: center;
+}
+
+.column span {
+  display: block;
+}
+
+.cell {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex: 1 auto;
+  border-bottom: 1px solid black;
+}
