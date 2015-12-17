@@ -7,15 +7,16 @@
 	<link rel="stylesheet" href="_css/font-awesome.min.css">
 	<link rel="stylesheet" href="_css/base.css">
 	<link rel="stylesheet" href="_css/flexbox.css">
-	<link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/style.css">
 	<link rel="shortcut icon" href="_img/favicon-16x16.png">
 </head>
+
 <body>
 	<header class="main-header">
 		<ul class="main-nav">
-			<li><a href="#">welcome</a></li>
-			<li><a href="#">horses</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="prop_welcome.html">welcome</a></li>
+			<li><a href="prop_horses.html" class="selected">horses</a></li>
+			<li><a href="prop_contact.html">Contact</a></li>
 		</ul>
 	</header><!--/.main-header-->
 
@@ -35,18 +36,16 @@
 		<!-- row 2 -->
 		<div class="grid">
 		<div class="grid__col--1"></div>
-
-
 		  <div class="grid__col--2 " id="play-container">
-				<div class="play-container">
-		            <a class="play-button-link">
-		           <!--  <img class="img--avatar--mobile" src="_img/horses/135x135_poe_m.jpg" alt="Avatar"> -->
-					<img class="img--avatar " src="_img/horses/135x135_poe.jpg" alt="Avatar">
+			<div class="play-container">
+	            <a class="play-button-link">
+	           <!--  <img class="img--avatar--mobile" src="_img/horses/135x135_poe_m.jpg" alt="Avatar"> -->
+				<img class="img--avatar " src="_img/horses/135x135_poe.jpg" alt="Avatar">
 
-					<img class="img--avatar play-button is-hidden" alt="" src="_img/play-overlay.png" />
-					</a>
-			        <a href="#poe"><h4 style="text-align:center;"><i class="fa fa-book fa-fw"></i>Poe</h4></a>
-		    </div>
+				<img class=" img--avatar play-button is-hidden" alt="" src="_img/play-overlay.png" />
+				</a>
+		        <a href="#poe"><h4 style="text-align:center;"><i class="fa fa-book fa-fw"></i>Poe</h4></a>
+	        </div>
 		  </div>
 
 
@@ -116,12 +115,12 @@
 
 
     <!-- Video -->
-    <div class="video hide">
+    <div class="hide video">
         <div class="grid">
             <center>
                 <video width="560" height="315" controls>
-                  <source src="movie.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
+                  <!-- <source src="movie.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg"> -->
                     <!-- Place holder video sources -->
                 </video>
             </center>
@@ -1196,38 +1195,16 @@
 
 	<div class="grid">
 	  <footer class="grid__col--12 panel--padded--centered" role="contentinfo">
-		<p class="copyright">&copy;2015 Course-Walkers, LLC is owned by Katrin Katterman.</p>
+		<p class="copyright">&copy;2015 Course-Walkers</p>
 	  </footer>
 	</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="libraries/jquery-2.1.4.min.js"><\/script')</script>
-    <script src="libraries/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="libraries/handlebars-v4.0.5.js"></script>
-    <script src="scripts/video.js"></script>
-    <script>
-      // $('#toggle').click(function() {
-      //   $(this).next('.nav').toggleClass("is-collapsed-mobile");
-      // });
-      $('#toggle-1').click(function() {
-        $('.ancestry-1').toggleClass("is-hidden");
-      });
-      $('#toggle-2').click(function() {
-        $('.ancestry-2').toggleClass("is-hidden");
-      });
-      $('#toggle-3').click(function() {
-        $('.ancestry-3').toggleClass("is-hidden");
-      });
-      $('#toggle-4').click(function() {
-        $('.ancestry-4').toggleClass("is-hidden");
-      });
-      $('#toggle-5').click(function() {
-        $('.ancestry-5').toggleClass("is-hidden");
-      });
-      $('#toggle-6').click(function() {
-        $('.ancestry-6').toggleClass("is-hidden");
-      });
-    </script>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="./libraries/handlebars-v4.0.5.js"></script>
+<!-- <script src="./scripts/ancestry_logic.js"></script> -->
+<script src="./_js/cw.js"></script>
+<script src="./_js/shell.js"></script>
 
 </body>
-</html>

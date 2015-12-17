@@ -1,17 +1,18 @@
 $(function(){
 
   function playButton(){
-    $(".play").on("click", function(){
+    $(".play-button").on("click", function(){
       var $gallery = $(".gallery");
-      var $video = $(".video");
+      var $video = $(".video").fitVids();
       var $returnButton = $(".return-button");
 
-      $gallery.slideUp("fast");
-      $video.removeClass("hide");
-
+      $(this).on("click", function(){
+        $gallery.slideUp(600, "swing");
+        $video.fadeIn(600, "swing");
+      })
       $returnButton.on("click", function(){
-        $gallery.slideDown("fast");
-        $video.addClass("hide");
+        $gallery.slideDown(600, "swing");
+        $video.fadeOut(600, "swing");
       });
     })
   }
@@ -29,8 +30,3 @@ $(function(){
   galleryTemplate();
 
 })
-//change .gallery to display: none;
-//button back to gallery inside .video div
-//keep div set to display none
-//remove display: none from div
-//
