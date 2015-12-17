@@ -1,16 +1,16 @@
 $(function(){
 
   function playButton(){
-    $(".play").on("click", function(){
+    $(".play-button").on("click", function(){
       var $gallery = $(".gallery");
       var $video = $(".video");
       var $returnButton = $(".return-button");
 
-      $gallery.slideUp("fast");
+      $gallery.slideUp("slow");
       $video.removeClass("hide");
 
       $returnButton.on("click", function(){
-        $gallery.slideDown("fast");
+        $gallery.slideDown("slow");
         $video.addClass("hide");
       });
     })
