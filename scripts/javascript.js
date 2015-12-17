@@ -6,12 +6,13 @@ $(function(){
       var $video = $(".video");
       var $returnButton = $(".return-button");
 
-      $gallery.slideUp("slow");
-      $video.removeClass("hide");
-
+      $(this).on("click", function(){
+        $gallery.slideUp(600, "swing");
+        $video.fadeIn(600, "swing");
+      })
       $returnButton.on("click", function(){
-        $gallery.slideDown("slow");
-        $video.addClass("hide");
+        $gallery.slideDown(600, "swing");
+        $video.fadeOut(600, "swing");
       });
     })
   }
@@ -29,8 +30,3 @@ $(function(){
   galleryTemplate();
 
 })
-//change .gallery to display: none;
-//button back to gallery inside .video div
-//keep div set to display none
-//remove display: none from div
-//
