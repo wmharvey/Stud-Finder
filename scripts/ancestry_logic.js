@@ -21,7 +21,8 @@ function ancestryCondition (condition, value) {
     }
   });
   console.log(ancestryArray);
-  $('#insert_here').append(JSON.stringify(ancestryArray));
+  // $('#insert_here').append(JSON.stringify(ancestryArray));
+  renderTables();
 };
 
 function createAncestry(horse, index) {
@@ -70,5 +71,3 @@ function findDam (horse) {
   }
   return false;
 };
-
-getJSON();
