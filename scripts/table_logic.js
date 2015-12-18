@@ -2,7 +2,6 @@
 var maxAncestory = 32;
 
 function createTable (pedigree) {
-  console.log("pedigree:" + pedigree);
   var index = 2;
   var loops = 2;
   var table = "<div class='table'>";

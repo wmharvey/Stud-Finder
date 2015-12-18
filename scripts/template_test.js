@@ -26,12 +26,13 @@ function initTemplate() {
   })
 }
 
-function initGallery {
+function initGallery() {
   $.get('templates/gallery.html', function(data) {
     var template = Handlebars.compile(data);
     horseArray.forEach(function(item) {
       if (item.img_thumbnail) {
         var compiledHtml = template(item);
+        $('#insert_gallery').append(compiledHtml);
       }
     })
   })
