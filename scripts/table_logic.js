@@ -2,10 +2,10 @@
 var maxAncestory = 32;
 
 function createTable (pedigree) {
-  console.log("pedigree:" + pedigree);
+  //console.log("pedigree:" + pedigree);
   var index = 2;
   var loops = 2;
-  var table = "<div class='table'>";
+  var table = "<div class='table_container'><div class='table'>";
   while (index < maxAncestory - 1) {
     table += fillColumn(pedigree);
   }
@@ -22,6 +22,8 @@ function createTable (pedigree) {
     loops *= 2;
     return content;
   }
-  table += "</div>";
+  table += "</div></div>";
   return table;
 }
+
+

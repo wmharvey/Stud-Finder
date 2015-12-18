@@ -1,3 +1,7 @@
+.table_container {
+  display: none;
+}
+
 .table {
   display: flex;
   border-top: 1px solid black;
