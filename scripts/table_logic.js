@@ -1,9 +1,8 @@
-//One array to hold all tables
-var arrayOfTables = [];
 //Cut off for table size
 var maxAncestory = 32;
 
 function createTable (pedigree) {
+  console.log("pedigree:" + pedigree);
   var index = 2;
   var loops = 2;
   var table = "<div class='table'>";
@@ -14,7 +13,9 @@ function createTable (pedigree) {
   function fillColumn () {
     var content = "<div class='column'>";
     for (var i = 0; i < loops; i++) {
-      content += "<div class='cell'><span>" + pedigree[index].name + "</span><span>" + pedigree[index].id + "</span></div>";
+      var name = pedigree[index].name ? (pedigree[index].name) : "unknown";
+      var id = pedigree[index].id ? (pedigree[index].id) : ("unknown");
+      content += "<div class='cell'><span>" + name + "</span><span>" + id + "</span></div>";
       index++;
     }
     content += "</div>";
@@ -24,21 +25,3 @@ function createTable (pedigree) {
   table += "</div>";
   return table;
 }
-
-
-
-function renderTables() {
-  ancestryArray.forEach(function(array) {
-    arrayOfTables.push(createTable(array));
-  });
-  arrayOfTables.forEach(function(table) {
-    $('#insert_here').append(table);
-  });
-}
-
-// function renderTables () {
-//   $('#insert_here').append(createTable(ancestryArray[0]));
-// }
-
-
-getJSON();

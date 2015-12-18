@@ -4,6 +4,7 @@
     "name": "C-W&rsquo;s Pride Over Easy (Poe)",
     "showcase": true,
     "img": "_img/576x300_poe.jpg",
+    "img_thumbnail": "_img/horses/135x135_poe.jpg",
     "nickname": "poe",
     "stud-fee": 500,
     "LFG": true,
@@ -216,6 +217,7 @@
     "name": "Cat&rsquo;s Lucky Patches (Lucky)",
     "showcase": true,
     "img": "_img/576x300_lucky.jpg",
+    "img_thumbnail": "_img/horses/135x135_lucky.jpg",
     "nickname": "lucky",
     "description": "Born in May, 1995, Lucky was proudly added to the Course-Walker family in 2005. She has brought the older bloodlines to our breeding program and has turned out to be an excelent mother and riding horse as well. She is a striking example of a tobiano mare, and her smooth, head-shaking gait is a pleasure to ride. Lucky has a clasic Walking Horse head, and large body, with good bone in her legs. She has excelled as a trail horse and is pretty enough for the showring. She gives her babies not only the conformation of a good solid Walking Horse, but a levelheadedness that makes training so easy.",
     "table": true,
@@ -431,6 +433,7 @@
     "name": "Pusher&rsquo;s Miss Merry Rose (Rosie)",
     "showcase": true,
     "img": "_img/576x300_rosie.jpg",
+    "img_thumbnail": "_img/horses/135x135_rosie.jpg",
     "nickname": "rosie",
     "description": "Rosie came to Course-Walkers as a rescue horse.We were only going to foster care her until she could find a permanent home - it just turned out to be us! Well gaited and a terrific trail horse, we just enjoyed riding her, but have been overjoyed at having finally uncovered her breeding. We were able to register her and she is now one of our good brood mares in addition to being a great riding horse. She is short but sturdy, and has the same disposition in our horses that we love so much - she is personable, curious and calm, easily trained and has a great running walk. We fully expect these traits to be passed along to her foals.",
     "table": true,
@@ -623,6 +626,7 @@
     "name": "Meganizer (Pickle)",
     "showcase": true,
     "img": "_img/576x300_pickle.jpg",
+    "img_thumbnail": "_img/horses/135x135_pickle.jpg",
     "nickname": "pickle",
     "description": "Born in 1997, \"Pickle\" started out life as a race horse until she retired in 2002. She now does a little of everything from dressage and jumping, riding the trails, teach beginners as well as a little cow work now and then. She has the power that Thoroughbreds are so noted for, but it has been tempered by a lot of dillegent training. She has the versitility to jog with the best Quarter Horses as well as find that lofty trot that so enamours the dressage crowd. She is very soft to the bit and can be ridden bridless, and keeps her head when allowed to gallop on the beach coming back to a trot at just a deep breath."
   },
@@ -631,7 +635,8 @@
     "name": "Crescent Bay Bob (Bay Bob)",
     "showcase": true,
     "img": "_img/576x300_baybob.jpg",
-    "nickname": "baybob",
+    "img_thumbnail": "_img/horses/135x135_baybob.jpg",
+    "nickname": "bay bob",
     "description": "Bay Bob has been an absolute joy to have in the Course-Walkers string. He is a wonderful gelding who is at home on the trail as well as working over a jumping course. He works well with beginners as well as advanced students, gaiting naturally in a rope halter as well as working well in a bit. He has all the atributes that one looks for in a perfect horse - comes to you in the pasture, polite on the ground, clips, bathes, loads, ties and cross ties, stands for mounting, riding inside and out, alone or in a group.",
     "table": true,
     "sire": {
@@ -733,6 +738,7 @@
     "name": "C-W's Clair De Lune (Zoomer)",
     "showcase": true,
     "img": "_img/576x300_zoomer.jpg",
+    "img_thumbnail": "_img/horses/135x135_zoomer.jpg",
     "nickname": "zoomer",
     "description": "Born June 12, 2009, Zoomer is the first foal from Pushers Miss Merry Rose. He is black with a white star, hind pastern and snip. Zoomer is super curious and friendly. He likes to play running full speed across the field ending in a slide stop, spin and buck. He is naturally gaited and likes to show this off in the field.",
     "table": true,
@@ -748,6 +754,7 @@
     "name": "Ocean Crest Merry Shocky",
     "showcase": true,
     "img": "_img/576x300_boopie.jpg",
+    "img_thumbnail": "_img/horses/135x135_boopie.jpg",
     "nickname": "boopie",
     "description": "Originally purchased as a trail horse, \"Boopie\" has shown the true versitility of the Walking Horse. Boopie competes in eventing, a three part competition including dressage, show jumping, and cross-country jumping. He holds his own against the non-gaited horses, and proves that you can have it all!",
     "table": true,
@@ -961,5 +968,17 @@
   {
     "id": 511251,
     "name": "Pretty Babe"
+  },
+  {
+    "img_thumbnail": "_img/horses/135x135_sienna.jpg",
+    "nickname": "sienna"
+  },
+  {
+    "img_thumbnail": "_img/horses/135x135_mms.jpg",
+    "nickname": "mm's"
+  },
+  {
+    "img_thumbnail": "_img/horses/135x135_toast.jpg",
+    "nickname": "toast"
   }
 ]

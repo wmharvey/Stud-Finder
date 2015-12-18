@@ -1,30 +1,3 @@
-//contains the origin JSON data, an array of horse objects
-var horseArray = [];
-//an array of arrays, each array an ancestry tree
-var ancestryArray = [];
-//an array to create an ancestry tree, reusable
-var singleAncestry = [];
-
-function getJSON () {
-  $.getJSON('data/horses.json', function(data) {
-    horseArray = data;
-    ancestryCondition('table', true);
-  });
-};
-
-function ancestryCondition (condition, value) {
-  horseArray.forEach(function(item) {
-    if (item[condition] === value) {
-      singleAncestry = [];
-      createAncestry(item, 1);
-      ancestryArray.push(createAncestry(item, 1));
-    }
-  });
-  console.log(ancestryArray);
-  // $('#insert_here').append(JSON.stringify(ancestryArray));
-  renderTables();
-};
-
 function createAncestry(horse, index) {
   singleAncestry[index] = horse;
   //console.log('finding sire');
