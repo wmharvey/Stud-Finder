@@ -64,8 +64,6 @@ img {
 }
 
 h4 {
-  /*margin-top: 1.375em;*/
-  /*margin-bottom: 2.57143em;*/
   color: #d6d7d9;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -101,7 +99,7 @@ h4 {
 }
 
 .main-nav .selected {
-	color: #000000;
+	color: #0b0b0b;
 }
 
 /* ---- Layout Containers ---- */
@@ -175,6 +173,14 @@ h4 {
   top: 4%;
 }
 
+.toggle {
+	cursor: pointer;
+}
+
+.toggle:hover {
+	color: #0b0b0b;
+}
+
 
 /* ---- Page Elements ---- */
 
@@ -195,6 +201,7 @@ h4 {
   margin-right: auto;
   border-radius: 50%;
 	border: 6px solid #eee;
+	cursor:pointer;
 }
 
 /*.img--avatar--mobile{

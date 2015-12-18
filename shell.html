@@ -35,24 +35,40 @@
 	<header><h1>Testing!</h1></header>
 
 	<div id="insert_gallery"></div>
-
-
-
-	<div id="insert_showcase"></div>
-
-
+	<!-- <div id="insert_showcase"></div> -->
+	<div id="insert_here"></div>
 
 	<p class="grid"></p>
 
 	<div class="grid">
-	  <footer class="grid__col--12 panel--padded--centered" role="contentinfo">
+	  <footer class="grid__col--12" role="contentinfo">
 		<p class="copyright">&copy;2015 Course-Walkers, LLC</p>
 	  </footer>
 	</div>
 
 </div>
 
-
+<!-- group by 5 -->
+<script id="thumb-template" type="text/x-handlebars-template">
+	{{#grouped_each 5 thumb}}
+	<div class="grid">
+		<div class="grid__col--1"></div>
+		{{#each this}}
+		<div class="grid__col--2 ">
+			<div class="play-container">
+	            <a href = "{{videoPath}}" class="play-button-link">
+					<img class="img--avatar" src="{{imgAvatar}}" alt="Avatar">
+					<img class="img--avatar play-button is-hidden" alt="" src="_img/play-overlay.png" />
+				</a>
+		        <a href="#{{nickname}}"><h4 style="text-align:center;"><i class="fa fa-book fa-fw"></i>{{nickname}}</h4></a>
+	    	</div>
+	  	</div>
+	  	{{/each}}
+		<div class="grid__col--1"></div>
+	</div>
+	{{/grouped_each}}
+</script>
+<!--
 <script id="entry-template" type="text/x-handlebars-template">
 	{{#each showcases}}
 	 <h4 id={{nickname}} class="grid">{{name}} - {{id}}</h4>
@@ -60,19 +76,21 @@
 	    <div class="grid__col--5">
 	      <img class="img--wrap" src={{img}} alt="sample image">
 	      <div>
-	        <a href=""><p class="toggle" style="border:1px solid pink;"><i class="fa fa-bars fa-fw"></i>show/hide ancestry</p></a>
+	        <p class="toggle"><i class="fa fa-bars fa-fw"></i>show/hide ancestry</p>
 	      </div>
 	    </div>
 	    <div class="grid__col--7">
 	      <p>{{description}}</p>
 	    </div>
 	  </div>
-  {{/each}}
+  	{{/each}}
 </script>
+-->
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="./libraries/handlebars-v4.0.5.js"></script>
 <!-- <script src="./scripts/ancestry_logic.js"></script> -->
+<script src="./_js/util.js"></script>
 <script src="./_js/cw.js"></script>
 <script src="./_js/shell.js"></script>
 
