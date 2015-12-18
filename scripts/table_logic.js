@@ -27,18 +27,18 @@ function createTable (pedigree) {
 
 
 
-// function renderTables() {
-//   ancestryArray.forEach(function(array) {
-//     arrayOfTables.push(createTable(array));
-//   });
-//   arrayOfTables.forEach(function(table) {
-//     $('#insert_here').append(table);
-//   });
-// }
-function renderTables () {
-  $('#insert_here').append(createTable(ancestryArray[0]));
-
+function renderTables() {
+  ancestryArray.forEach(function(array) {
+    arrayOfTables.push(createTable(array));
+  });
+  arrayOfTables.forEach(function(table) {
+    $('#insert_here').append(table);
+  });
 }
+
+// function renderTables () {
+//   $('#insert_here').append(createTable(ancestryArray[0]));
+// }
 
 
 getJSON();

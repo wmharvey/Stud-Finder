@@ -8,7 +8,7 @@ var singleAncestry = [];
 function getJSON () {
   $.getJSON('data/horses.json', function(data) {
     horseArray = data;
-    ancestryCondition('showcase', true);
+    ancestryCondition('table', true);
   });
 };
 
