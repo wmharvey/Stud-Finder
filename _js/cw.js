@@ -13,7 +13,7 @@ cw.makeHandlebars = function(){
 	var renderer = Handlebars.compile(template);
 	// put data in a variable
 	var myData = [{
-		name: "C-W&rsquo;s Pride Over Easy (Poe)",
+		name: "C-W’s Pride Over Easy (Poe)",
 		nickname: "poe",
 		id: "0007836",
 		img: "_img/576x300_poe.jpg",
@@ -28,13 +28,9 @@ cw.makeHandlebars = function(){
 	}];
 
 
-	var articles = myData;
+	var showcases = myData;
 	// call the compiled function with the template date
-	//var result = renderer({articles});
-	var result = renderer({articles});
-	 //var result = renderer({blog.raw});
-	  //console.log('hi' + result);
-	 //format date before appending to to #articles
+	var result = renderer({showcases});
 
-	 $('#insert_showcase').append(result);
+	$('#insert_showcase').append(result);
 }
