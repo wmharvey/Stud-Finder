@@ -8,6 +8,7 @@
     "stud-fee": 500,
     "LFG": true,
     "description": "Foaled on May 25, 2000, Poe is a wonderful stallion. His personality and nature is like none other. He is smart, willing, and athletic. Most folks who come to the barn don&rsquo;t realize that he is a stallion because he is so gentle. Poe has a strong, compact, baroque body style, adding to his appeal and athleticism. Poe has a natural gait and good hard feet which allows him to remain barefoot year &rsquo;round. He gives his offspring his easy-going nature and trainability. His babies have also all been very personable and like to be with people.",
+    "table": true,
     "sire": {
       "id": 802065,
       "name": "Exclusive Pride"},
@@ -217,6 +218,7 @@
     "img": "_img/576x300_lucky.jpg",
     "nickname": "lucky",
     "description": "Born in May, 1995, Lucky was proudly added to the Course-Walker family in 2005. She has brought the older bloodlines to our breeding program and has turned out to be an excelent mother and riding horse as well. She is a striking example of a tobiano mare, and her smooth, head-shaking gait is a pleasure to ride. Lucky has a clasic Walking Horse head, and large body, with good bone in her legs. She has excelled as a trail horse and is pretty enough for the showring. She gives her babies not only the conformation of a good solid Walking Horse, but a levelheadedness that makes training so easy.",
+    "table": true,
     "sire": {
       "id": 900002,
       "name": "Catalyst"},
@@ -338,7 +340,7 @@
     "id": 727118,
     "name": "Insignas Sweetheart",
     "sire": {
-      "id": 7673827,
+      "id": 673827,
       "name": "Go Boy's Insignia"},
     "dam": {
       "id": 694010,
@@ -431,6 +433,7 @@
     "img": "_img/576x300_rosie.jpg",
     "nickname": "rosie",
     "description": "Rosie came to Course-Walkers as a rescue horse.We were only going to foster care her until she could find a permanent home - it just turned out to be us! Well gaited and a terrific trail horse, we just enjoyed riding her, but have been overjoyed at having finally uncovered her breeding. We were able to register her and she is now one of our good brood mares in addition to being a great riding horse. She is short but sturdy, and has the same disposition in our horses that we love so much - she is personable, curious and calm, easily trained and has a great running walk. We fully expect these traits to be passed along to her foals.",
+    "table": true,
     "sire": {
       "id": 935206,
       "name": "Pusher&rsquo;s Firestone"},
@@ -630,6 +633,7 @@
     "img": "_img/576x300_baybob.jpg",
     "nickname": "baybob",
     "description": "Bay Bob has been an absolute joy to have in the Course-Walkers string. He is a wonderful gelding who is at home on the trail as well as working over a jumping course. He works well with beginners as well as advanced students, gaiting naturally in a rope halter as well as working well in a bit. He has all the atributes that one looks for in a perfect horse - comes to you in the pasture, polite on the ground, clips, bathes, loads, ties and cross ties, stands for mounting, riding inside and out, alone or in a group.",
+    "table": true,
     "sire": {
       "id": 802065,
       "name": "Exclusive Pride"},
@@ -731,6 +735,7 @@
     "img": "_img/576x300_zoomer.jpg",
     "nickname": "zoomer",
     "description": "Born June 12, 2009, Zoomer is the first foal from Pushers Miss Merry Rose. He is black with a white star, hind pastern and snip. Zoomer is super curious and friendly. He likes to play running full speed across the field ending in a slide stop, spin and buck. He is naturally gaited and likes to show this off in the field.",
+    "table": true,
     "sire": {
       "id": 20007836,
       "name": "C-W's Pride Over Easy"},
@@ -745,6 +750,7 @@
     "img": "_img/576x300_boopie.jpg",
     "nickname": "boopie",
     "description": "Originally purchased as a trail horse, \"Boopie\" has shown the true versitility of the Walking Horse. Boopie competes in eventing, a three part competition including dressage, show jumping, and cross-country jumping. He holds his own against the non-gaited horses, and proves that you can have it all!",
+    "table": true,
     "sire": {
       "id": 824278,
       "name": "Music Merry Patches"},
@@ -842,4 +848,118 @@
       "id": 420564,
       "name": "Nancy Blue"}
   },
+  {
+    "id": 530319,
+    "name": "Shore Leave",
+    "sire": {
+      "id": 400226,
+      "name": "Sailor Boy"},
+    "dam": {
+      "id": 440390,
+      "name": "Swamp Angel"}
+  },
+  {
+    "id": 712654,
+    "name": "Polly's Jet Star",
+    "sire": {
+      "id": 656927,
+      "name": "Polly's Parader"},
+    "dam": {
+      "id": 658650,
+      "name": "Cindys Mistake"}
+  },
+  {
+    "id": 731702,
+    "name": "Doug's Midnite Star",
+    "sire": {
+      "id": 580745,
+      "name": "Go Boy's Southern Sun"},
+    "dam": {
+      "id": 681798,
+      "name": "Angel at Midnight N."}
+  },
+  {
+    "id": 642219,
+    "name": "C-D Tarquin, Jr.",
+    "sire": {
+      "id": 581429,
+      "name": "Tarquin the Proud"},
+    "dam": {
+      "id": 501956,
+      "name": "Dainty Mary Jean"}
+  },
+  {
+    "id": 698383,
+    "name": "Mack K's Pretty Babe",
+    "sire": {
+      "id": 645109,
+      "name": "Romeo's Mack K."},
+    "dam": {
+      "id": 511251,
+      "name": "Pretty Babe"}
+  },
+  {
+    "id": 510641,
+    "name": "Midnight Pleasure R. G."
+  },
+  {
+    "id": 510392,
+    "name": "My Susan"
+  },
+  {
+    "id": 510791,
+    "name": "Diamond Lil Man"
+  },
+  {
+    "id": 442231,
+    "name": "Viki Allen"
+  },
+  {
+    "id": 431336,
+    "name": "Merry Go Boy"
+  },
+  {
+    "id": 420564,
+    "name": "Nancy Blue"
+  },
+  {
+    "id": 400226,
+    "name": "Sailor Boy"
+  },
+  {
+    "id": 440390,
+    "name": "Swamp Angel"
+  },
+  {
+    "id": 656927,
+    "name": "Polly's Parader"
+  },
+  {
+    "id": 658650,
+    "name": "Cindys Mistake"
+  },
+  {
+    "id": 580745,
+    "name": "Go Boy's Southern Sun"
+  },
+  {
+    "id": 681798,
+    "name": "Angel at Midnight N."
+  },
+  {
+    "id": 581429,
+    "name": "Tarquin the Proud"
+  },
+  {
+    "id": 501956,
+    "name": "Dainty Mary Jean"
+  },
+  {
+    "id": 645109,
+    "name": "Romeo's Mack K."
+  },
+  {
+    "id": 511251,
+    "name": "Pretty Babe"
+  }
 ]
