@@ -19,10 +19,15 @@ function initTemplate() {
           singleAncestry = [];
           var indexArray = createAncestry(item, 1);
           var table = createTable(indexArray);
-          $('#insert_here').append(table);
+          $('#insert_placeholder').append(table);
+          $('#insert_placeholder').removeAttr('id');
+        } else {
+          $('#insert_placeholder').removeAttr('id');
         }
       }
     });
+    tableFilter();
+    toggleTable();
   })
 }
 
@@ -40,3 +45,7 @@ function initGallery() {
 }
 
 getJSON();
+
+
+
+
