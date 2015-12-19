@@ -1,3 +1,13 @@
+.table_container {
+  display: none;
+  text-align: center;
+  width: ;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em;
+
+}
+
 .table {
   display: flex;
   border-top: 1px solid black;
