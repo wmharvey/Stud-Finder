@@ -35,6 +35,7 @@ function initGallery() {
         $('#insert_gallery').append(compiledHtml);
       }
     })
+    playButton();
   })
 }
 
