@@ -1,7 +1,7 @@
 [
   {
     "id": 20007836,
-    "name": "C-W&rsquo;s Pride Over Easy (Poe)",
+    "name": "C-W's Pride Over Easy (Poe)",
     "showcase": true,
     "img": "_img/576x300_poe.jpg",
     "img_thumbnail": "_img/horses/135x135_poe.jpg",
@@ -9,14 +9,14 @@
     "nickname_space": "Poe",
     "stud-fee": 500,
     "LFG": true,
-    "description": "Foaled on May 25, 2000, Poe is a wonderful stallion. His personality and nature is like none other. He is smart, willing, and athletic. Most folks who come to the barn don&rsquo;t realize that he is a stallion because he is so gentle. Poe has a strong, compact, baroque body style, adding to his appeal and athleticism. Poe has a natural gait and good hard feet which allows him to remain barefoot year &rsquo;round. He gives his offspring his easy-going nature and trainability. His babies have also all been very personable and like to be with people.",
+    "description": "Foaled on May 25, 2000, Poe is a wonderful stallion. His personality and nature is like none other. He is smart, willing, and athletic. Most folks who come to the barn don't realize that he is a stallion because he is so gentle. Poe has a strong, compact, baroque body style, adding to his appeal and athleticism. Poe has a natural gait and good hard feet which allows him to remain barefoot year 'round. He gives his offspring his easy-going nature and trainability. His babies have also all been very personable and like to be with people.",
     "table": true,
     "sire": {
       "id": 802065,
       "name": "Exclusive Pride"},
     "dam": {
       "id": 774901,
-      "name": "Sun&rsquo;s Piddley Dee"}
+      "name": "Sun's Piddley Dee"}
   },
   {
     "id":  802065,
@@ -26,17 +26,17 @@
       "name": "Pride of Midnight H.F."},
     "dam": {
       "id": 713928,
-      "name": "Delight&rsquo;s Lady K."}
+      "name": "Delight's Lady K."}
   },
   {
     "id":  774901,
-    "name": "Sun&rsquo; Piddley Dee",
+    "name": "Sun' Piddley Dee",
     "sire": {
       "id": 620157,
-      "name": "Sun&rsquo;s Merry Man"},
+      "name": "Sun's Merry Man"},
     "dam": {
       "id": 677176,
-      "name": "Majorette&rsquo;s Gala"}
+      "name": "Majorette's Gala"}
   },
     {
     "id":  661459,
@@ -50,33 +50,33 @@
   },
   {
     "id":  713928,
-    "name": "Delight&rsquo;s Lady K.",
+    "name": "Delight's Lady K.",
     "sire": {
       "id": 592756,
-      "name": "Sun&rsquo;s Delight D."},
+      "name": "Sun's Delight D."},
     "dam": {
       "id": 631510,
-      "name": "Go Boy&rsquo;s Lady K."}
+      "name": "Go Boy's Lady K."}
   },
   {
     "id":  620157,
-    "name": "Sun&rsquo;s Merry Man",
+    "name": "Sun's Merry Man",
     "sire": {
       "id": 561395,
       "name": "Reyclif Mid-Merry"},
     "dam": {
       "id": 540232,
-      "name": "Lady&rsquo;s High Calico"}
+      "name": "Lady's High Calico"}
   },
   {
     "id":  677176,
-    "name": "Majorette&rsquo;s Gala",
+    "name": "Majorette's Gala",
     "sire": {
       "id": 590720,
-      "name": "Liberace&rsquo;s Playboy"},
+      "name": "Liberace's Playboy"},
     "dam": {
       "id": 623584,
-      "name": "Calico&rsquo;s Majorette"}
+      "name": "Calico's Majorette"}
   },
   {
     "id":  410751,
@@ -84,10 +84,10 @@
     "WGC": true,
     "sire": {
       "id": 350075,
-      "name": "Wilson&rsquo;s Allen"},
+      "name": "Wilson's Allen"},
     "dam": {
       "id": 410682,
-      "name": "Ramsey&rsquo;s Rena"}
+      "name": "Ramsey's Rena"}
   },
   {
     "id":  472897,
@@ -101,24 +101,24 @@
   },
   {
     "id":  592756,
-    "name": "Sun&rsquo;s Delight D.",
+    "name": "Sun's Delight D.",
     "WGC": true,
     "sire": {
       "id": 410751,
       "name": "Midnight Sun"},
     "dam": {
       "id": 492405,
-      "name": "Wilson Snip&rsquo;s Chance"}
+      "name": "Wilson Snip's Chance"}
   },
   {
     "id":  631510,
-    "name": "Go Boy&rsquo;s Lady K.",
+    "name": "Go Boy's Lady K.",
     "sire": {
       "id": 431336,
       "name": "Merry Go Boy"},
     "dam": {
       "id": 570471,
-      "name": "Merry Boy&rsquo;s Lady K."}
+      "name": "Merry Boy's Lady K."}
   },
   {
     "id":  561395,
@@ -132,7 +132,7 @@
   },
   {
     "id":  540232,
-    "name": "Lady&rsquo;s High Calico",
+    "name": "Lady's High Calico",
     "sire": {
       "id": 461763,
       "name": "Golden Sun Allen"},
@@ -142,31 +142,31 @@
   },
   {
     "id": 590720,
-    "name": "Liberace&rsquo;s Playboy",
+    "name": "Liberace's Playboy",
     "sire": {
       "id": 541209,
-      "name": "Eagle&rsquo;s Mr. Liberace"},
+      "name": "Eagle's Mr. Liberace"},
     "dam": {
       "id": 453170,
       "name": "Bond Rally"}
   },
   {
     "id": 623584,
-    "name": "Calico&rsquo;s Majorette",
+    "name": "Calico's Majorette",
     "sire": {
       "id": 462820,
-      "name": "Merry Boy&rsquo;s Major"},
+      "name": "Merry Boy's Major"},
     "dam": {
       "id": 540232,
-      "name": "Lady&rsquo;s High Calico"}
+      "name": "Lady's High Calico"}
   },
   {
     "id": 350075,
-    "name": "Wilson&rsquo;s Allen"
+    "name": "Wilson's Allen"
   },
   {
     "id": 410682,
-    "name": "Ramsey&rsquo;s Rena"
+    "name": "Ramsey's Rena"
   },
   {
     "id": 410944,
@@ -187,7 +187,7 @@
   },
   {
     "id": 570471,
-    "name": "Merry Boy&rsquo;s Lady K."
+    "name": "Merry Boy's Lady K."
   },
   {
     "id": 430979,
@@ -203,7 +203,7 @@
   },
   {
     "id": 541209,
-    "name": "Eagle&rsquo;s Mr. Liberace"
+    "name": "Eagle's Mr. Liberace"
   },
   {
     "id": 453170,
@@ -215,7 +215,7 @@
   },
   {
     "id": 955365,
-    "name": "Cat&rsquo;s Lucky Patches (Lucky)",
+    "name": "Cat's Lucky Patches (Lucky)",
     "showcase": true,
     "img": "_img/576x300_lucky.jpg",
     "img_thumbnail": "_img/horses/135x135_lucky.jpg",
@@ -228,7 +228,7 @@
       "name": "Catalyst"},
     "dam": {
       "id": 923878,
-      "name": "Painter&rsquo;s Little Patches"}
+      "name": "Painter's Little Patches"}
   },
   {
     "id": 900002,
@@ -432,7 +432,7 @@
   },
   {
     "id": 20215870,
-    "name": "Pusher&rsquo;s Miss Merry Rose (Rosie)",
+    "name": "Pusher's Miss Merry Rose (Rosie)",
     "showcase": true,
     "img": "_img/576x300_rosie.jpg",
     "img_thumbnail": "_img/horses/135x135_rosie.jpg",
@@ -442,10 +442,10 @@
     "table": true,
     "sire": {
       "id": 935206,
-      "name": "Pusher&rsquo;s Firestone"},
+      "name": "Pusher's Firestone"},
     "dam": {
       "id": 954224,
-      "name": "Merry B&rsquo;s Deep Threat"}
+      "name": "Merry B's Deep Threat"}
   },
   {
     "id": 935206,
