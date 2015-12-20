@@ -1,6 +1,6 @@
 $(function() {
 
-  cw.loadSite();
-  cw.getJSON();
+  // cw.loadSite();
+  // cw.getJSON();
 
 });

@@ -184,6 +184,10 @@ h4 {
 
 /* ---- Page Elements ---- */
 
+.headline--centered {
+	text-align: center;
+}
+
 .icn--nav-toggle, .icn--close {
   line-height: 0;
   cursor: pointer;
@@ -204,9 +208,20 @@ h4 {
 	cursor:pointer;
 }
 
-/*.img--avatar--mobile{
-	display: block;
-}*/
+
+/* ---- Page Specific : Welcome : Horses : Contact ---- */
+
+.welcome {
+	display: none;
+}
+.contact {
+	margin-top: 30px;
+	display: none;
+}
+.horses {
+	margin-top: 30px;
+}
+
 
 /* =================================
   Gallery Grid Sytem and Container
@@ -242,6 +257,152 @@ h4 {
 
 .container:after {
   clear: both; }
+
+
+/* =================================
+  Table
+==================================== */
+
+/* ---- Table ---- */
+
+.table_container {
+  display: none;
+  text-align: center;
+  width: ;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em;
+
+}
+
+.table {
+  display: flex;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 25%;
+  border-right: 1px solid black;
+  max-height: 1000px;
+  text-align: center;
+}
+
+.column span {
+  display: block;
+}
+
+.cell {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex: 1 auto;
+  border-bottom: 1px solid black;
+}
+
+
+/* =================================
+  Gallery
+==================================== */
+
+/* ---- Gallery ---- */
+#insert_gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 auto;
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.img-avatar {
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img_wrap {
+  position: relative;
+  width: 147px;
+  height: 147px;
+  margin: 0 auto;
+}
+
+.thumbnail {
+  text-align: center;
+  padding: 15px;
+}
+
+.play-button {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.return-button {
+  margin-top: 5px;
+}
+
+.gallery_name {
+  margin-bottom: 0;
+  margin-top: 7px;
+}
+
+.play-button:hover {
+  opacity: 0.7;
+}
+
+video {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  #insert_gallery {
+    flex-direction: row;
+  }
+  .thumbnail {
+    width: 50%;
+  }
+}
+@media (min-width: 700px) {
+  #insert_gallery {
+    flex-direction: row;
+  }
+  .thumbnail {
+    width: 33%;
+  }
+}
+@media (min-width: 900px) {
+  #insert_gallery {
+    flex-direction: row;
+  }
+  .thumbnail {
+    width: 25%;
+  }
+}
+@media (min-width: 1000px) {
+  #insert_gallery {
+    flex-direction: row;
+  }
+  .thumbnail {
+    width: 20%;
+  }
+}
 
 
 /* =========================================
@@ -281,6 +442,22 @@ h4 {
 
 	.main-logo {
 		margin: 105px 0 0 30px;
+	}
+
+	/* ---- flexbox for header nav ---- */
+
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex: 1;
 	}
 
 	/* Page Elements
@@ -354,13 +531,28 @@ h4 {
 	}
 }
 
+ @media (min-width: 1025px) {
+	/* ---- flexbox for header nav ---- */
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
  @media (min-width: 1050px) {
     .grid {
       max-width: 1050px;
   	}
  }
 
+
  /* ---- States and Debug ---- */
+
+.TEST {
+	position: absolute;
+	margin-bottom: 0;
+	color: #e2e2e2;
+}
 
 .is-hidden {
   display: none;
