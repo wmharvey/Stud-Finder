@@ -7,6 +7,7 @@ var eTag;
 var isHorsesPage;
 var isWelcomePage;
 var isContactPage;
+var siteLoaded = false;
 
 cw.pageSetUp = function() {
 	page.base('/');
@@ -24,7 +25,12 @@ cw.pageSetUp = function() {
 	});
 
 	page('horses', function(){
-		cw.renderHorsesPage();
+		if(siteLoaded){
+			cw.renderHorsesPage();
+		}else{
+			isHorsesPage = true;
+			cw.loadSite();
+		}
 		// cw.resetPageFlags();
 		// isHorsesPage = true;
 		// cw.loadSite();
@@ -145,18 +151,11 @@ cw.getJSON = function() {
 };
 
 cw.checkPageTab = function() {
-	console.log(isHorsesPage);
+	//console.log(isHorsesPage);
 	if(isHorsesPage){
+		siteLoaded = true;
 		cw.resetPageFlags();
 		cw.renderHorsesPage();
-	}
-	if(isWelcomePage){
-		cw.resetPageFlags();
-		cw.renderWelcomePage();
-	}
-	if(isContactPage){
-		cw.resetPageFlags();
-		cw.renderContactPage();
 	}
 };
 
