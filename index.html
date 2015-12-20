@@ -13,7 +13,7 @@
 	<header class="main-header">
 		<ul class="main-nav">
 			<li><a href="./welcome" class="nav-welcome">welcome</a></li>
-			<li><a href="./" class="nav-horses">horses</a></li>
+			<li><a href="./horses" class="nav-horses">horses</a></li>
 			<li><a href="./contact" class="nav-contact">Contact</a></li>
 		</ul>
 	</header><!--/.main-header-->
@@ -133,64 +133,6 @@
 
 	<script src="./_js/cw.js"></script>
 	<!-- <script src="./_js/util.js"></script>
-	<script src="./_js/cw.js"></script>
 	<script src="./_js/shell.js"></script> -->
-
-	<script>
-      // the "notfound" implements a catch-all
-      // with page('*', notfound). Here we have
-      // no catch-all, so page.js will redirect
-      // to the location of paths which do not
-      // match any of the following routes
-      //
-
-      page.base('/');
-
-      page('', index);
-      page('welcome', welcome);
-      page('contact', contact);
-      // page('contact/:contactName', contact);
-      page();
-
-      function index() {
-        // document.querySelector('p')
-        //   .textContent = 'viewing index';
-        $('.TEST').text('viewing index-horses page');
-        removedSelected();
-        $('.nav-horses').addClass('selected');
-        hideTabContent();
-        // $('.horses').fadeIn('slow');
-        $('.horses').show();
-      }
-
-      function welcome() {
-        // document.querySelector('p')
-        //   .textContent = 'viewing about';
-        $('.TEST').text('viewing welcome');
-        removedSelected();
-        $('.nav-welcome').addClass('selected');
-        hideTabContent();
-        $('.welcome').fadeIn('fast');
-      }
-
-      function contact(ctx) {
-        // document.querySelector('p')
-        //   .textContent = 'viewing contact ' + (ctx.params.contactName || '');
-        $('.TEST').text('viewing contact');
-        removedSelected();
-        $('.nav-contact').addClass('selected');
-        hideTabContent();
-        $('.contact').fadeIn('fast');
-      }
-
-      function removedSelected() {
-      	$('.main-nav a.selected').removeClass('selected');
-      }
-
-      function hideTabContent() {
-      	$('.tab-content').hide();
-      }
-
-    </script>
 
 </body>
