@@ -1,5 +1,3 @@
-
-
   function playButton() {
     $(".play-button").on("click", function () {
       console.log('click');
@@ -16,12 +14,3 @@
     })
   };
 
-  //
-  // function galleryTemplate() {
-  //   $.get("templates/gallery-template.html", function(data){
-  //     console.log(data);
-  //     var compileTemplate = Handlebars.compile(data);
-  //     var html = compileTemplate;
-  //     $(".template").append(html); //currently appending to .template class in html
-  //   })
-  // }
