@@ -149,6 +149,7 @@ cw.initGallery = function() {
   })
 };
 
+
 // KICKS THINGS OFF HERE!
 //cw.getJSON();
 //cw.loadSite();
