@@ -1,11 +1,11 @@
 .table_container {
+  font-size: 5px;
   display: none;
   text-align: center;
   width: ;
   overflow-y: auto;
   _overflow: auto;
   margin: 0 0 1em;
-
 }
 
 .table {
@@ -37,3 +37,22 @@
   flex: 1 auto;
   border-bottom: 1px solid black;
 }
+
+@media (min-width: 425px) {
+  .table_container {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 600px) {
+  .table_container {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
