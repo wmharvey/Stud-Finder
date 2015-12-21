@@ -14,7 +14,12 @@ function createTable (pedigree) {
     for (var i = 0; i < loops; i++) {
       var name = pedigree[index].name ? (pedigree[index].name) : "unknown";
       var id = pedigree[index].id ? (pedigree[index].id) : ("unknown");
-      content += "<div class='cell'><span>" + name + "</span><span>" + id + "</span></div>";
+      var wgc = pedigree[index].WGC;
+      content += "<div class='cell'><span>" + name;
+      if (wgc) {
+        content += ' (WGC)';
+      }
+      content += "</span><span>" + id + "</span></div>";
       index++;
     }
     content += "</div>";
@@ -24,5 +29,3 @@ function createTable (pedigree) {
   table += "</div></div>";
   return table;
 }
-
-
