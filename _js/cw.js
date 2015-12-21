@@ -4,52 +4,6 @@ var cw = cw || {};
 // in global scope?
 var horseArray = [];
 var eTag;
-// var isHorsesPage;
-// var isWelcomePage;
-// var isContactPage;
-// var siteLoaded = false;
-
-// cw.pageSetUp = function() {
-// 	page.base('/');
-//
-// 	//page('', cw.loadSite);
-// 	// page('horses', cw.horses);
-// 	// page('welcome', cw.welcome);
-// 	// page('contact', cw.contact);
-// 	//
-// 	page('', function(){
-// 		//cw.renderHorsesPage();
-// 		cw.resetPageFlags();
-// 		isHorsesPage = true;
-// 		cw.loadSite();
-// 	});
-//
-// 	page('horses', function(){
-// 		if(siteLoaded){
-// 			cw.renderHorsesPage();
-// 		} else{
-// 			isHorsesPage = true;
-// 			cw.loadSite();
-// 		}
-// 		// cw.resetPageFlags();
-// 		// isHorsesPage = true;
-// 		// cw.loadSite();
-// 	});
-// 	page('welcome', function(){
-// 		cw.renderWelcomePage();
-// 		// cw.resetPageFlags();
-// 		// isWelcomePage = true;
-// 		//cw.loadSite();
-// 	});
-// 	page('contact', function(){
-// 		cw.renderContactPage();
-// 		// cw.resetPageFlags();
-// 		// isContactPage = true;
-// 		//cw.loadSite();
-// 	});
-//
-// 	page();
-// };
 
 cw.renderHorsesPage = function() {
 	// document.querySelector('p')
