@@ -146,15 +146,9 @@ cw.initGallery = function() {
       }
     })
     playButton();
-    //cw.handleInternalClick();
   })
 };
 
-cw.handleInternalClick = function() {
-  $('.thumbnail a').on('click', function(e){
-    e.preventDefault();
-  })
-}
 
 // KICKS THINGS OFF HERE!
 //cw.getJSON();
