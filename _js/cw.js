@@ -8,7 +8,6 @@ var eTag;
 cw.renderHorsesPage = function() {
 	// document.querySelector('p')
 	//   .textContent = 'viewing index';
-	$('.TEST').text('viewing index-horses page');
 	cw.removedSelected();
 	$('.nav-horses').addClass('selected');
 	cw.hideTabContent();
@@ -21,7 +20,6 @@ cw.renderHorsesPage = function() {
 cw.renderWelcomePage = function() {
 	// document.querySelector('p')
 	//   .textContent = 'viewing about';
-	$('.TEST').text('viewing welcome');
 	cw.removedSelected();
 	$('.nav-welcome').addClass('selected');
 	cw.hideTabContent();
@@ -33,7 +31,6 @@ cw.renderWelcomePage = function() {
 cw.renderContactPage = function(ctx) {
 	// document.querySelector('p')
 	//   .textContent = 'viewing contact ' + (ctx.params.contactName || '');
-	$('.TEST').text('viewing contact');
 	cw.removedSelected();
 	$('.nav-contact').addClass('selected');
 	cw.hideTabContent();
