@@ -2,16 +2,17 @@
   "name": "stud-finder",
   "version": "1.0.0",
   "description": "Deploy to Heroku",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Code301-PDX-D1 final project team -- Stud Finders",
   "license": "MIT",
   "dependencies": {
+    "node-static": "^0.7.7",
     "ejs": "2.3.3",
     "express": "4.13.3",
-    "express-request-proxy": "^1.0.10",
     "pushstate-server": "^1.8.1"
   },
   "repository": {
