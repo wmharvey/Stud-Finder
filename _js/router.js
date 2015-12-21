@@ -1,23 +1,30 @@
 page.base('/');
 
 page('', control.main);
-page('about', control.welcome);
+page('welcome', control.welcome);
 page('contact', control.contact);
+page();
 
 var control = control || {};
 
 control.isHorsesPage = false;
 control.isWelcomePage = false;
 control.isContactPage = false;
+control.siteLoaded = false;
 
 control.main = function() {
-  control.isHorsesPage = true;
+  if(control.siteLoaded){
+    cw.renderHorsesPage();
+  } else {
+    control.isHorsesPage = true;
+    cw.loadSite();
+  }
 }
 
 control.welcome = function() {
-  control.isWelcomePage = true;
+  cw.renderWelcomePage();
 }
 
 control.contact = function() {
-  control.isContactPage = true;
+  cw.renderContactPage();
 }
