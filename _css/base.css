@@ -1,7 +1,9 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url('lato_https_fix.css');
+/*https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");*/
 
 /* ---- Normalize ---- */
-@import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
+@import url('normalize.css');
+/*  https://necolas.github.io/normalize.css/3.0.2/normalize.css'); */
 
 /* ---- Utils ---- */
 .grid:after {
