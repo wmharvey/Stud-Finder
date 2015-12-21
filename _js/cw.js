@@ -152,7 +152,7 @@ cw.getJSON = function() {
 
 cw.checkPageTab = function() {
 	//console.log(isHorsesPage);
-	if(isHorsesPage){
+	if(control.isHorsesPage){
 		control.siteLoaded = true;
 		cw.resetPageFlags();
 		cw.renderHorsesPage();
