@@ -138,13 +138,21 @@ h4 {
   background-size: 100%;
 }
 
-.gallery{
+.gallery {
 	/*border: 1px solid pink;*/
 	margin-top: 20px;
 }
 
-.gallery h4{
+.gallery h4 {
 	margin-top: .8em;
+}
+
+.thumbnail a {
+  color: #797e83;
+}
+
+.thumbnail a:hover {
+  text-decoration: underline;
 }
 
 .icn--nav-toggle {
