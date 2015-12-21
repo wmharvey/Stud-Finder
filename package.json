@@ -4,9 +4,10 @@
   "description": "Deploy to Heroku",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Code301-PDX-D1 final project team -- Stud Finders",
+  "license": "MIT",
   "dependencies": {
     "ejs": "2.3.3",
     "express": "4.13.3",
@@ -16,7 +17,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://git.heroku.com/tranquil-atoll-5957.git"
-  },
-  "author": "Code301-PDX-D1 final project team -- Stud Finders",
-  "license": "MIT"
+  }
 }
