@@ -20,21 +20,21 @@
 
 function iFrameSizing() {
   $('.thumbnail').on('click', function() {
-    var width = '';
-    width += ($(window).width() - 50);
-    var height = '';
-    height += $(window).width() * (3/4);
-    $('iframe').css('width', width);
-    $('iframe').css('height', height);
-
-    $(window).resize(function() {
-      var width = '';
-      width += ($(window).width() - 30);
-      var height = '';
-      height += $(window).width() * (3/4);
-      $('iframe').css('width', width);
-      $('iframe').css('height', height);
-    })
-
-    })
+    sizeFrame();
+    $(window).resize(sizeFrame);
+  });
 };
+
+function sizeFrame() {
+  var width = '';
+  var height = '';
+  if ($(window).width() < 800) {
+    width += ($(window).width() - 50);
+    height += $(window).width() * (1/2);
+  } else {
+    width = '750';
+    height = '400';
+  }
+  $('iframe').css('width', width);
+  $('iframe').css('height', height);
+}

@@ -3,19 +3,17 @@
  <h4 class="grid">{{name}} - {{id}}{{#if stud-fee}} :: (STUD FEE ${{stud-fee}}, {{#if LFG}} LFG {{/if}}){{/if}}</h4>
   <div class="grid horse-details">
     <div class="grid__col--5">
-      <!-- <a href="#" data-featherlight={{img}}><img class="img--wrap" src={{img}} /></a> -->
       <section class="showcase_gallery" data-featherlight-gallery data-featherlight-filter="a">
         {{#each img}}
         <a class="gallery{{../nickname}}" href={{this}}><img src={{this}} /></a>
         {{/each}}
       </section>
-      <div>
-        <p class="toggle"><i class="fa fa-bars fa-fw"></i>show/hide ancestry</p>
-      </div>
+      <p class="toggle show_wide"><i class="fa fa-bars fa-fw"></i>show/hide ancestry</p>
     </div>
     <div class="grid__col--7">
       <p>{{description}}</p>
     </div>
   </div>
+  <p class="grid toggle show_narrow"><i class="fa fa-bars fa-fw"></i>show/hide ancestry</p>
   <div id="insert_placeholder"></div>
 </div>
