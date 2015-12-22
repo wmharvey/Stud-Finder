@@ -1,8 +1,11 @@
 function toggleTable() {
   var tableContainer = $(this).closest('.container').find('.table_container');
   $('.toggle').on('click', function() {
-    var table = $(this).closest('.container').find('.table_container').toggle();
-  })
+    var table = $(this).closest('.container').find('.table_container').slideToggle();
+    $('html, body').animate({
+      scrollTop: table.offset().top
+    }, 1000);
+  });
 }
  function tableFilter() {
   $(".toggle").each(function(){
