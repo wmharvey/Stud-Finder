@@ -132,7 +132,6 @@ cw.initFeatherlight = function(horseObj) {
 	var gallery = '.gallery' + horseObj.nickname;
 	$(gallery).featherlightGallery();
 	$('.showcase_gallery').children().not(':first-child').css('display', 'none');
-	// $.featherlight({iframe: 'index.html', iframeMaxWidth: '800px', iframeWidth: '80%'});
 }
 
 cw.initGallery = function() {
@@ -144,6 +143,6 @@ cw.initGallery = function() {
         $('#insert_gallery').append(compiledHtml);
       }
     })
-    // playButton();
+    iFrameSizing();
   })
 };

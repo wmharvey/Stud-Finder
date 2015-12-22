@@ -3,7 +3,7 @@ function toggleTable() {
   $('.toggle').on('click', function() {
     var table = $(this).closest('.container').find('.table_container').slideToggle();
     $('html, body').animate({
-      scrollTop: table.offset().top
+      scrollTop: (table.offset().top - 100)
     }, 1000);
   });
 }
@@ -15,4 +15,3 @@ function toggleTable() {
     }
   });
  }
-
