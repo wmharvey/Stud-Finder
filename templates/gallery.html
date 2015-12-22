@@ -1,5 +1,9 @@
 <div class = "thumbnail">
   <div class="img_wrap"><img class="img-avatar" src={{img_thumbnail}} />
   <img class="play-button vid_img" src="_img/play-overlay.png" /></div>
-  <p class="gallery_name"><a href=#{{nickname}}>{{nickname_space}}</a></p>
+
+ <p class="gallery_name"> {{#if description}}<a href=#{{nickname}}>{{nickname_space}}</a>{{else}}{{nickname_space}}{{/if}} </p>
 </div>
+
+
+
