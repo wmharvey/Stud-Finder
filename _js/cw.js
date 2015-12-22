@@ -130,8 +130,8 @@ cw.initTemplate = function() {
 
 cw.initFeatherlight = function(horseObj) {
 	var gallery = '.gallery' + horseObj.nickname;
-	console.log('gallery: ' + gallery);
 	$(gallery).featherlightGallery();
+	$('.showcase_gallery').children().not(':first-child').css('display', 'none');
 }
 
 cw.initGallery = function() {
@@ -143,12 +143,6 @@ cw.initGallery = function() {
         $('#insert_gallery').append(compiledHtml);
       }
     })
-    playButton();
+    iFrameSizing();
   })
 };
-
-
-// KICKS THINGS OFF HERE!
-//cw.getJSON();
-//cw.loadSite();
-// cw.pageSetUp();
