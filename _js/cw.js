@@ -6,8 +6,6 @@ var horseArray = [];
 var eTag;
 
 cw.renderHorsesPage = function() {
-	// document.querySelector('p')
-	//   .textContent = 'viewing index';
 	cw.removedSelected();
 	$('.nav-horses').addClass('selected');
 	cw.hideTabContent();
@@ -18,8 +16,6 @@ cw.renderHorsesPage = function() {
 };
 
 cw.renderWelcomePage = function() {
-	// document.querySelector('p')
-	//   .textContent = 'viewing about';
 	cw.removedSelected();
 	$('.nav-welcome').addClass('selected');
 	cw.hideTabContent();
@@ -29,8 +25,6 @@ cw.renderWelcomePage = function() {
 };
 
 cw.renderContactPage = function(ctx) {
-	// document.querySelector('p')
-	//   .textContent = 'viewing contact ' + (ctx.params.contactName || '');
 	cw.removedSelected();
 	$('.nav-contact').addClass('selected');
 	cw.hideTabContent();
@@ -117,6 +111,7 @@ cw.initTemplate = function() {
       if (item.showcase) {
         var compiledHtml = template(item);
         $('#insert_showcase').append(compiledHtml);
+				cw.initFeatherlight(item);
         if (item.table) {
           singleAncestry = [];
           var indexArray = createAncestry(item, 1);
@@ -132,6 +127,12 @@ cw.initTemplate = function() {
     toggleTable();
   })
 };
+
+cw.initFeatherlight = function(horseObj) {
+	var gallery = '.gallery' + horseObj.nickname;
+	console.log('gallery: ' + gallery);
+	$(gallery).featherlightGallery();
+}
 
 cw.initGallery = function() {
 	$.get('templates/gallery.html', function(data) {
