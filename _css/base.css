@@ -249,8 +249,24 @@ h4 {
 }
 
 .horse-details {
-	border-bottom: 1px solid #eee;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.show_table {
+  display: block;
+}
+
+.show_wide {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .show_wide {
+    display: block;
+  }
+  .show_narrow {
+    display: none;
+  }
 }
 
 [class*="grid__col--"] > .grid {
@@ -263,7 +279,7 @@ h4 {
 .container {
   margin-right: auto;
   margin-left: auto;
-  /*border: 1px solid pink;*/ }
+}
 
 .container:before, .container:after {
   content: " ";
