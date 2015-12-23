@@ -1,17 +1,32 @@
 $(document).ready(function() {
 
  if (localStorage.getItem('image_fields')) {
-   console.log('cache hit');
+   console.log('extra image fields persisting');
    $('#images').html(localStorage.getItem('image_fields'));
+ }
+
+ if (localStorage.getItem('current_data')) {
+   console.log('cache hit');
+   var dataString = localStorage.getItem('current_data');
+   var oldData = JSON.parse(dataString);
+   console.log(oldData);
+   fillInputFields(oldData);
  }
 
  $('#stud').change(function() {
    $('.stud-toggle').toggle();
+   persistText();
    console.log('stud clicked');
+ });
+
+ $('#lfg').change(function() {
+   persistText();
+   console.log('lfg clicked');
  });
 
  $('#ancestry').change(function() {
    $('.table_container').toggle();
+   persistText();
    console.log('table clicked');
  });
 
@@ -23,6 +38,7 @@ $(document).ready(function() {
 
  $('#clear').on('click', function() {
    localStorage.setItem('image_fields', '');
+   localStorage.setItem('current_data', '');
  })
 
  $('#render').on('click', function() {
@@ -31,7 +47,7 @@ $(document).ready(function() {
 
 persist();
 function persist() {
-  $('#name, #nickname, #id, #thumbnail, #fee, #lfg, #description, .image-url').on('input', function() {
+  $('#name, #nickname, #id, #thumbnail, #fee, #lfg, #description, .image-url, .ancestor-name, .ancestor-id').on('input', function() {
   console.log('stuff has been entered');
   var image_fields = $('#images').html();
   localStorage.setItem('image_fields', image_fields);
@@ -40,6 +56,34 @@ function persist() {
 };
 
 })
+
+function fillInputFields(oldData) {
+  $('#name').val(oldData[0].name);
+  $('#nickname').val(oldData[0].nickname_space);
+  $('#id').val(oldData[0].id);
+  // oldData[0].img.length
+  for (var i = 0; i < oldData[0].img.length; i++) {
+    $('.image-url:eq(' + i + ')').val(oldData[0].img[i]);
+  }
+  $('#thumbnail').val(oldData[0].img_thumbnail);
+  if (oldData[0].stud_fee) {
+    $('#stud').prop('checked', true);
+    $('.stud-toggle').toggle();
+    $('#fee').val(oldData[0].stud_fee);
+    if (oldData[0].LFG) {$('#lfg').prop('checked', true)}
+  }
+  $('#description').val(oldData[0].description);
+  if (oldData.length > 1) {
+    $('#ancestry').prop('checked', true);
+    $('.table_container').toggle();
+    for (var i = 0; i < 30; i++) {
+      var ancestorId = oldData[i + 1].id;
+      var ancestorName = oldData[i + 1].name;
+      $('.ancestor-id:eq(' + i + ')').val(ancestorId);
+      $('.ancestor-name:eq(' + i + ')').val(ancestorName);
+    }
+  }
+}
 
 function persistText() {
   var currentHorses = JSON.stringify(render());
@@ -89,7 +133,7 @@ function getImages() {
 }
 
 function makeTableArray() {
-  var indexedHorses = [undefined, undefined];
+  var indexedHorses = [];
   for (var i = 0; i < 31; i++) {
     var ancestor = {};
     ancestor.id = $('.ancestor-id:eq('+i+')').val();
