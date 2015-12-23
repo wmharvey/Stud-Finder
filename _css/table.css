@@ -1,18 +1,14 @@
-/*.table_container {
-  font-size: 5px;
+.table_container {
   display: none;
-  text-align: center;
-  width: ;
-  overflow-y: auto;
-  _overflow: auto;
-  margin: 0 0 1em;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .table {
   display: flex;
   border-top: 1px solid black;
   border-left: 1px solid black;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -22,12 +18,14 @@
   justify-content: space-around;
   width: 25%;
   border-right: 1px solid black;
-  max-height: 1000px;
+  height: 1500px;
   text-align: center;
 }
 
-.column span {
+.column input {
   display: block;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .cell {
@@ -37,23 +35,3 @@
   flex: 1 auto;
   border-bottom: 1px solid black;
 }
-
-@media (min-width: 425px) {
-  .table_container {
-    font-size: 8px;
-  }
-}
-
-@media (min-width: 600px) {
-  .table_container {
-    font-size: 10px;
-  }
-}*/
-
-
-
-
-
-
-
-
