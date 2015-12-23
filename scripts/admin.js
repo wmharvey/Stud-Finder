@@ -49,9 +49,16 @@ function render() {
     showcase.sire.name = $('.ancestor-name:eq(0)').val();
     showcase.dam.id = $('.ancestor-id:eq(1)').val();
     showcase.dam.name = $('.ancestor-name:eq(1)').val();
-    createAncestors();
+    newHorses = makeTableArray();
+    console.log('newHorses: '+ newHorses);
+    newHorses.unshift(showcase);
   }
-  console.log('object:' + JSON.stringify(showcase));
+
+  function createAncestors() {
+    var tableArray = makeTableArray();
+  }
+
+  $('#stringified').text(JSON.stringify(newHorses));
 }
 
 function getImages() {
@@ -60,4 +67,24 @@ function getImages() {
     arrayOfImages.push($(this).val());
   })
   return arrayOfImages;
+}
+
+function makeTableArray() {
+  var indexedHorses = [undefined, undefined];
+  for (var i = 0; i < 31; i++) {
+    var ancestor = {};
+    ancestor.id = $('.ancestor-id:eq(i)').val();
+    ancestor.name = $('.ancestor-name:eq(i)').val();
+    ancestor.sire = {};
+    ancestor.dam = {};
+    if (i < 14) {
+      ancestor.sire.id = $('.ancestor-id:eq((i+1) * 2)').val();
+      ancestor.sire.name = $('.ancestor-name:eq((i+1) * 2)').val();
+      ancestor.dam.id = $('.ancestor-id:eq((i+1) * 2 + 1)').val();
+      ancestor.dam.name = $('.ancestor-name:eq((i+1) * 2 + 1)').val();
+    }
+    indexedHorses.push(ancestor);
+  }
+  console.log('indexedHorses: '+ indexedHorses);
+  return indexedHorses;
 }
