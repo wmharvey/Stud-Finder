@@ -5,219 +5,233 @@
   <meta charset="utf-8">
   <title>Admin Page</title>
 	<link rel="stylesheet" href="_css/base.css">
-  	<link rel="stylesheet" href="_css/table.css">
-  	<link rel="stylesheet" href="_css/admin.css">
+  	<!-- <link rel="stylesheet" href="_css/table.css">
+  	<link rel="stylesheet" href="_css/admin.css"> -->
   	<link rel="stylesheet" href="_css/admin-styles.css">
 	<link rel="shortcut icon" href="_img/favicon-16x16.png">
 </head>
 
 <body>
-<div id="admin-wrapper">
-<form action="admin-secret-url.html" method="post">
-<h1>Horse Data:</h1>
-<p>Copy and paste the JSON object into the horses.json to update site.</p>
-<fieldset class="basic-info">
-<legend><span class="number">1</span>Basic Info</legend>
-<div class="entry">
-  Full Name of Horse: <input type="text" id="name"/>
-</div>
+	<div id="header-horses">
+		<div id="header-holder">
+			<div class="container">
+				<div class="main-logo">
+					<a class="site-logo" href="index.html"><b class="srt">Course-Walkers Riding Lessons and Equestrian Academy</b></a>
+				</div>
+			</div>
+		</div>
+	</div><!--/#header-horses-->
+	<div id="admin-wrapper">
+		<form action="#" method="post">
+			<h1>Horse Data:</h1>
+			<p>Copy and paste the JSON object into the horses.json to update site.</p>
+			<fieldset class="basic-info">
+				<legend><span class="number">1</span>Basic Info</legend>
+				<div class="entry">
+				  Full Name of Horse: <input type="text" id="name"/>
+				</div>
 
-<div class="entry">
-  Nickname: <input type="text" id="nickname"/>
-</div>
+				<div class="entry">
+				  Nickname: <input type="text" id="nickname"/>
+				</div>
 
-<div class="entry">
-  ID: <input type="number" id="id"/>
-</div>
+				<div class="entry">
+				  ID: <input type="number" id="id"/>
+				</div>
 
-<div id="images">
-  <div class="entry">
-    Relative Image URL: <input type="text" class="image-url"/>
-  </div>
-</div>
+				<div id="images">
+				  <div class="entry">
+				    Relative Image URL: <input type="text" class="image-url"/>
+				  </div>
+				</div>
 
-<div class="entry" id="extra-image">
-  <span class="button btn">Add Another Image</span>
-</div>
+				<div class="entry" id="extra-image">
+				  <span class="button btn">Add Another Image</span>
+				</div>
 
-<div class="entry">
-  Image Thumbnail: <input type="text" id="thumbnail"/>
-</div>
+				<div class="entry">
+				  Image Thumbnail: <input type="text" id="thumbnail"/>
+				</div>
 
-<div class="entry">
-  Stud horse: <input type="checkbox" id="stud"/>
-</div>
+				<div class="entry">
+				  Stud horse: <input type="checkbox" id="stud"/>
+				</div>
 
-<div class="is-hidden stud-toggle">
-  <div class="entry">
-    Stud Fee: <input type="number" id="fee"/>
-  </div>
+				<div class="is-hidden stud-toggle">
+				  <div class="entry">
+				    Stud Fee: <input type="number" id="fee"/>
+				  </div>
 
-  <div class="entry">
-    LFG: <input type="checkbox" id="lfg"/>
-  </div>
-</div>
+				  <div class="entry">
+				    LFG: <input type="checkbox" id="lfg"/>
+				  </div>
+				</div>
 
-<div class="entry">
-  <div>Description: </div>
-  <textarea id="description"></textarea>
-</div>
-</fieldset>
-<fieldset class="">
-<legend><span class="number">2</span>Ancestry Info</legend>
-<div class="entry">
-  Ancestry Information Available: <input type="checkbox" id="ancestry"/>
-</div>
+				<div class="entry">
+				  <div>Description: </div>
+				  <textarea id="description"></textarea>
+				</div>
+			</fieldset>
+			<fieldset class="">
+				<legend><span class="number">2</span>Ancestry Info</legend>
+				<div class="entry">
+				  Ancestry Information Available: <input type="checkbox" id="ancestry"/>
+				</div>
 
-<div class="table_container">
-  <div class="table">
-    <div class="column">
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="sire's name" />
-        <input type="number" class="ancestor-id" placeholder="sire's id" />
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="dam's name"/>
-        <input type="number" class="ancestor-id" placeholder="dam's id"/>
-      </div>
-    </div>
-    <div class="column">
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-    </div>
-    <div class="column">
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-    </div>
-    <div class="column">
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-      <div class="cell">
-        <input type="text" class="ancestor-name" placeholder="name"/>
-        <input type="number" class="ancestor-id" placeholder="id"/>
-      </div>
-    </div>
-  </div>
-</div>
-</fieldset>
-<fieldset class="basic-info">
-<legend><span class="number">3</span>Render JSON</legend>
-<p></p>
-<div id="render">
-  <span class="button btn">Render Object<span>
-</div>
-<p></p>
-<p>Copy and paste this string: </p>
-<div id="stringified">
-</div>
-</fieldset>
-</form>
-</div>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="./scripts/admin.js"></script>
+				<div class="table_container">
+				  <div class="table">
+				    <div class="column">
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="sire's name" />
+				        <input type="number" class="ancestor-id" placeholder="sire's id" />
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="dam's name"/>
+				        <input type="number" class="ancestor-id" placeholder="dam's id"/>
+				      </div>
+				    </div>
+				    <div class="column">
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				    </div>
+				    <div class="column">
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				    </div>
+				    <div class="column">
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				      <div class="cell">
+				        <input type="text" class="ancestor-name" placeholder="name"/>
+				        <input type="number" class="ancestor-id" placeholder="id"/>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</fieldset>
+			<fieldset class="basic-info">
+				<legend><span class="number">3</span>Render JSON</legend>
+				<p></p>
+				<div id="render">
+				  <span class="button btn">Render Object<span>
+				</div>
 
+				<p></p>
+				<p>Copy and paste this string: </p>
+				<div id="stringified">
+				</div>
+			</fieldset>
+		</form>
+		<div>
+			<form action="./admin_lb.html">
+		  		<input type="submit" value="Clear" id="clear" class="btn"/>
+			</form>
+		</div>
+	</div><!-- #admin-wrapper -->
 
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="./scripts/admin.js"></script>
 </body>
 </html>
