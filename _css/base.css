@@ -61,6 +61,7 @@ p {
 a {
 	text-decoration: none;
 }
+
 img {
 	max-width: 100%;
 }
@@ -119,14 +120,14 @@ h4 {
 	/*background-color: rgba(30,30,30, .75);*/
 	background-image: url("../_img/1600x500_riding.jpg");
 	background-size: cover;
-		width: 100%;
+	width: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
-		/*min-height: 300px;*/
+	/*min-height: 300px;*/
 }
 #header-holder {
-		background-color: rgba(0,0,0,0.55);
-		height: 250px;
+	background-color: rgba(0,0,0,0.55);
+	height: 250px;
 }
 .main-logo {
 	/*border: 1px solid pink;*/
@@ -171,10 +172,10 @@ h4 {
 }
 
 .icn--nav-toggle:before {
-		width: 25px;
-		height: 3px;
-		background: #999da1;
-		top: 4px;
+	width: 25px;
+	height: 3px;
+	background: #999da1;
+	top: 4px;
 }
 
 .icn--close {
@@ -250,7 +251,6 @@ h4 {
 
 .grid {
 	width: 90%;
-
 }
 
 .horse-details {
@@ -279,7 +279,8 @@ h4 {
 }
 
 .container {
-	max-width: 1100px; }
+	max-width: 1100px;
+}
 
 .container {
   margin-right: auto;
@@ -288,10 +289,12 @@ h4 {
 
 .container:before, .container:after {
 	content: " ";
-	display: table; }
+	display: table;
+}
 
 .container:after {
-	clear: both; }
+	clear: both;
+}
 
 
 /* =================================
@@ -461,8 +464,8 @@ video {
 	================================ */
 
 	h4 {
-			margin-top: 2.625em;
-		}
+		margin-top: 2.625em;
+	}
 
 	/* Header and Banner
 	================================ */
@@ -475,15 +478,15 @@ video {
 
 	#header-horses{
 		background-image: url("../_img/1600x500_horses.jpg");
-			background-size: cover;
-			width: 100%;
+		background-size: cover;
+		width: 100%;
 		background-repeat: no-repeat;
 		background-position: top center;
-			min-height: 300px;
+		min-height: 300px;
 	}
 
 	#header-holder {
-			height: 300px;
+		height: 300px;
 	}
 
 	.main-logo {
@@ -510,69 +513,70 @@ video {
 	================================ */
 
 	.img--avatar {
-				margin-top: 1.5em;
-		}
+		margin-top: 1.5em;
+	}
 
-		.img--hero {
-			margin-bottom: 2.625em;
+	.img--hero {
+		margin-bottom: 2.625em;
 	}
 
 	/* Grid
 	================================ */
 
 	.grid__col--1 {
-			width: 6.5%;
+		width: 6.5%;
 	}
 	.grid__col--2 {
-			width: 15%;
+		width: 15%;
 	}
 	.grid__col--3 {
-			width: 23.5%;
+		width: 23.5%;
 	}
 	.grid__col--4 {
-			width: 32%;
+		width: 32%;
 	}
 	.grid__col--5 {
-			width: 40.5%;
+		width: 40.5%;
 	}
 	.grid__col--6 {
-			width: 49%;
+		width: 49%;
 	}
 	.grid__col--7 {
-			width: 57.5%;
+		width: 57.5%;
 	}
 	.grid__col--8 {
-			width: 66%;
+		width: 66%;
 	}
 	.grid__col--9 {
-			width: 74.5%;
+		width: 74.5%;
 	}
 	.grid__col--10 {
-			width: 83%;
+		width: 83%;
 	}
 	.grid__col--11 {
-			width: 91.5%;
+		width: 91.5%;
 	}
 	.grid__col--12 {
-			width: 100%;
+		width: 100%;
 	}
 
 	[class^="grid__col--"] {
-			float: left;
-			min-height: 1px;
-			padding-left: 10px;
-			padding-right: 10px; }
-			[class^="grid__col--"] + [class^="grid__col--"] {
-				margin-left: 2%; }
-			[class^="grid__col--"]:last-of-type {
-				float: right;
-	 }
-
+		float: left;
+		min-height: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	[class^="grid__col--"] + [class^="grid__col--"] {
+		margin-left: 2%;
+	}
+	[class^="grid__col--"]:last-of-type {
+		float: right;
+		}
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
 	[class^="grid__col--"] {
-			margin-top: 0.75em;
+		margin-top: 0.75em;
 		margin-bottom: 0.75em;
 	}
 }
@@ -611,25 +615,35 @@ video {
 }
 
 .theme__poly .grid__col--12 {
-	background-color: #DEF4E5; }
+	background-color: #DEF4E5;
+}
 
 .theme__poly .grid__col--8 {
-	background-color: #DCE0F2; }
+	background-color: #DCE0F2;
+}
 
 .theme__poly .grid__col--7 {
-	background-color: #DCF0EF; }
+	background-color: #DCF0EF;
+}
 
 .theme__poly .grid__col--6 {
-	background-color: #FFE3DB; }
+	background-color: #FFE3DB;
+}
 
 .theme__poly .grid__col--4 {
-	background-color: #F8EDD0; }
+	background-color: #F8EDD0;
+}
 
 .theme__poly .grid__col--5 {
-	background-color: #EAEBEC; }
+	background-color: #EAEBEC;
+}
 
 .theme__poly .grid__col--2 {
-	background-color: #C5E2CE; }
+	background-color: #C5E2CE;
+}
 
 .theme__poly .grid__col--3 {
-	background-color: #D6EEF5; }
+	background-color: #D6EEF5;
+}
+
+
