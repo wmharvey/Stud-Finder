@@ -1,0 +1,88 @@
+/* Base Styles
+================================ */
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+
+  	font: 'Helvetica Neue', Helvectica, Arial, serif;
+
+  	font-weight: 300;
+  	font-size: 1em;
+  	line-height: 1.5em;
+
+  	color: #384047;
+}
+
+h1, h2, h3 {
+
+    font-weight: 500;
+}
+
+.basic-info input[type="text"],
+.basic-info input[type="date"],
+.basic-info input[type="datetime"],
+.basic-info input[type="url"],
+.basic-info textarea {
+  	display: block;
+  	font-size: 16px;
+  	height: auto;
+  	margin: 0;
+  	outline: 0;
+  	padding: 15px;
+  	margin-bottom: 20px;
+  	width: 100%;
+}
+
+fieldset {
+	margin-bottom: 20px;
+
+}
+
+legend {
+	color: #c0392b;
+}
+
+
+/* Layout Styles
+================================ */
+
+#admin-wrapper {
+	max-width: 2800px;
+  	margin: 50px auto;
+  	padding: 0 20px;
+}
+
+/* Modual Styles
+================================ */
+
+.btn {
+  	padding: 9px 29px 8px 29px;
+  	color: #FFF;
+  	/*red*/
+  	background-color: #c0392b;
+  	text-align: center;
+  	font-style: normal;
+  	border-radius: 5px;
+  	width: 200px;
+  	margin-bottom: 10px;
+  	border: none;
+}
+
+.number {
+  	/*red*/
+  	background-color: #c0392b;
+  	color: #fff;
+  	height: 20px;
+  	width: 20px;
+  	display: inline-block;
+  	font-size: 0.8em;
+  	margin-right: 4px;
+  	line-height: 20px;
+  	text-align: center;
+  	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  	border-radius: 100%;
+}
+
