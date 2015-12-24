@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
  if (localStorage.getItem('image_fields')) {
-   console.log('extra image fields persisting');
    $('#images').html(localStorage.getItem('image_fields'));
  }
 
@@ -9,29 +8,24 @@ $(document).ready(function() {
    console.log('cache hit');
    var dataString = localStorage.getItem('current_data');
    var oldData = JSON.parse(dataString);
-   console.log(oldData);
    fillInputFields(oldData);
  }
 
  $('#stud').change(function() {
    $('.stud-toggle').toggle();
    persistText();
-   console.log('stud clicked');
  });
 
  $('#lfg').change(function() {
    persistText();
-   console.log('lfg clicked');
  });
 
  $('#ancestry').change(function() {
    $('.table_container').toggle();
    persistText();
-   console.log('table clicked');
  });
 
  $('#extra-image').on('click', function() {
-   console.log('extra image clicked');
    $('#images').append("<div class='entry'>Relative Image URL: <input type='text' class='image-url'/></div>");
    persist();
  })
@@ -48,7 +42,6 @@ $(document).ready(function() {
 persist();
 function persist() {
   $('#name, #nickname, #id, #thumbnail, #fee, #lfg, #description, .image-url, .ancestor-name, .ancestor-id').on('input', function() {
-  console.log('stuff has been entered');
   var image_fields = $('#images').html();
   localStorage.setItem('image_fields', image_fields);
   persistText();
